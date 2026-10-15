@@ -34,3 +34,19 @@ function APCSP() {
 function APCSA(){
     window.open("https://apstudents.collegeboard.org/courses/ap-computer-science-a", "_blank");
 }
+function first(){
+    window.location.href="#first";
+}
+
+function courses(){
+    window.location.href="#courses";
+    let k = document.getElementById("showCourses");
+    console.log(k.display);
+    if (k.display === "none"){
+        k.display = "sticky";
+    }
+    else {
+        k.display = "none";
+    }
+
+}

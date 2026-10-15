@@ -5,6 +5,7 @@ body{
     color: white;
     font-size: large;
     margin: 0;
+    width: 100%;
 }
 #sidebar{
     background-color: gold;
@@ -15,26 +16,40 @@ body{
     top: 0;
     left: 0;
     height: 100vh;
+    width: 1000px;
     align-items: center;
+    text-align: center;
 
-    padding-top: 10px;
     a{
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-right: 220px;
+        border: black solid 1px;
+        font-size: x-large;
+    }
+    h4{
         padding-bottom: 20px;
     }
-    a:hover{
-        background-color: lightgray;
+
+    .hi:hover{
+        background-color: white;
+    }
+    .hi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
     }
 }
 #website{
     display: flex;
     flex-direction: column;
     position: sticky;
-    padding-left:10px ;
-    left: 100vw;
+    padding-left:10px;
     padding-top: 0;
 
+}
+#showCourses{
+    display: none;
 }
 #first{
     font-size: xxx-large;

@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(28, 69, 135);
+    color: white;
+    font-size: large;
+    margin: 0;
+}
+#sidebar{
+    background-color: gold;
+
+}
+#first{
+    font-size: xxx-large;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#section{
+    margin-bottom: 70px;
+}
+.paragraph{
+    margin-bottom: 15px;
+
+}
+.section{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.sub{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+.cur{
+    margin-bottom: 75px;
+}
+.AP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        margin-top: 25px;
+        width: 75px;
+        height: 40px;
+    }
+}
+
+.clubs{
+    display: flex;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows: auto auto;
+    gap: 10px;
+    img{
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+#carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        color: black;
+        background-color: gold;
+    }
+}
+#k{
+    height:350px;
+    width: 600px;
+}
+
+.karl{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows: auto auto;
+    gap: 10px;
+
+    img{
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 100px;
+        width: 100px;
+
+    }
+    p{
+        grid-column: span 1;
+        text-align: center;
+    }
+}
+
+.college{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

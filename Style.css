@@ -1,4 +1,6 @@
 body{
+    display: flex;
+    flex-direction: row;
     background-color: rgb(28, 69, 135);
     color: white;
     font-size: large;
@@ -6,6 +8,32 @@ body{
 }
 #sidebar{
     background-color: gold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    align-items: center;
+
+    padding-top: 10px;
+    a{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+    }
+    a:hover{
+        background-color: lightgray;
+    }
+}
+#website{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    padding-left:10px ;
+    left: 100vw;
+    padding-top: 0;
 
 }
 #first{

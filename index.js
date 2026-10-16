@@ -38,15 +38,76 @@ function first(){
     window.location.href="#first";
 }
 
+function APP(){
+    window.location.href="#APCSP";
+}
+function APA(){
+    window.location.href="#APCSA";
+}
+function Honors(){
+    window.location.href="#Honors";
+}
+function Capstone(){
+    window.location.href="#Capstone";
+}
+function discrete(){
+    window.location.href="#discrete";
+}
+
 function courses(){
-    window.location.href="#courses";
     let k = document.getElementById("showCourses");
-    console.log(k.display);
-    if (k.display === "none"){
-        k.display = "sticky";
+    window.location.href="#courses";
+    console.log(k.style.display);
+    if (k.style.display === "block"){
+        k.style.display = "none";
     }
     else {
-        k.display = "none";
+        k.style.display = "block";
+    }
+}
+function Clubs(){
+    let k = document.getElementById("showClubs");
+    window.location.href="#extra";
+    console.log(k.style.display);
+    if (k.style.display === "block"){
+        k.style.display = "none";
+    }
+    else {
+        k.style.display = "block";
+    }
+}
+
+function robot(){
+    window.location.href="#robot";
+}
+function cyber(){
+    window.location.href="#cyber";
+}
+function ACSL(){
+    window.location.href="#ACSL";
+}
+function CIMA(){
+    window.location.href="#CIMA";
+}
+
+function colleges(){
+    window.location.href="#colleges";
+}
+function side(){
+    let k = document.getElementById("sidebar");
+    let j = document.getElementById("hamburger");
+    let l = document.getElementById("hamburger");
+    if (k.style.display === "none"){
+        k.style.display = "block";
+        j.style.color = "black";
+        l.style.borderColor = "black";
+        console.log("stick it" + k.style.display);
+    }
+    else {
+        k.style.display = "none";
+        j.style.color = "white";
+        l.style.borderColor = "white";
+        console.log(k.style.display);
     }
 
 }

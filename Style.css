@@ -7,12 +7,19 @@ body{
     margin: 0;
     width: 100%;
 }
+#hamburger{
+    color: black;
+    position: fixed;
+        border: black solid 1px;
+        font-size: x-large;
+}
+
 #sidebar{
     background-color: gold;
     color: black;
     display: flex;
     flex-direction: column;
-    position: sticky !important;
+    position: sticky;
     top: 0;
     left: 0;
     height: 100vh;
@@ -44,11 +51,14 @@ body{
     display: flex;
     flex-direction: column;
     position: sticky;
-    padding-left:10px;
+    padding-left:20px;
     padding-top: 0;
 
 }
 #showCourses{
+    display: none;
+}
+#showClubs{
     display: none;
 }
 #first{

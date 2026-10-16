@@ -7,8 +7,8 @@
     <script src = "index.js"></script>
 </head>
 <body>
+
 <div id = "sidebar">
-    <a>≣</a>
     <div class = "hi" onclick = "first()">
     <h2  >Computer Science Magnet Program</h2>
         <h4>Freehold High School </h4>
@@ -17,29 +17,44 @@
     <h4>Courses in Program</h4>
     </div>
     <div id = "showCourses" >
-        <div class = "hi">
-        <p href = "#APCSP"> AP Computer Science Principals </p>
+        <div class = "hi" onclick = "APP()">
+        <p> AP Computer Science Principals </p>
         </div>
-        <div class = "hi">
-        <p href = "#APCSA"> AP Computer Science A</p>
+        <div class = "hi" onclick = "APA()">
+        <p>AP Computer Science A</p>
         </div>
-        <div class = "hi">
-        <p href = "#Honors"> Honors Data Structures and Algotithms</p>
+        <div onclick = "Honors()" class = "hi">
+        <p> Honors Data Structures and Algotithms</p>
         </div>
-        <div class = "hi">
-        <p href = "#Capstone"> Honors CS Senior Capstone: Web, Data, and AI</p>
+        <div onclick = "Capstone()" class = "hi">
+        <p> Honors CS Senior Capstone: Web, Data, and AI</p>
         </div>
-        <div class = "hi">
-        <p href = "#discrete"> Honors Discrete Math and Cybersecurity</p>
+        <div onclick = "discrete()" class = "hi">
+        <p > Honors Discrete Math and Cybersecurity</p>
         </div>
     </div>
-    <div class = "hi">
+    <div class = "hi" onclick = "Clubs()">
     <h4>Extracurricular opportunities</h4>
     </div>
-    <div class = "hi">
+    <div id = "showClubs">
+        <div onclick = "robot()" class = "hi">
+            <p>Robotics</p>
+        </div>
+        <div onclick = "cyber()" class = "hi">
+            <p>Cybersecurity</p>
+        </div>
+        <div onclick = "ACSL()" class = "hi">
+            <p>Computer Science League</p>
+        </div>
+        <div onclick = "CIMA()" class = "hi">
+            <p>Computing Inspiration & Mentorship Association</p>
+        </div>
+    </div>
+    <div class = "hi" onclick = "colleges()">
     <h4>Where our student have gone</h4>
     </div>
 </div>
+
 <div id = "website">
 <div>
 <h1 id = "first"> Computer Science Magnet Program </h1>
@@ -84,9 +99,9 @@
     </div>
 </div>
 <div>
-    <h2 class = "section">Extracurricular Opportunities</h2>
+    <h2 class = "section" id = "extra">Extracurricular Opportunities</h2>
     <div class = "cur">
-        <h3 class = "sub">Robotics</h3>
+        <h3 class = "sub" id = "robot">Robotics</h3>
         <p class = "paragraph">Our robotics club was founded by a passionate group of students in 2024. The 2025-2026 school year marked our first year of competition, with many students learning robotics from the ground up. Through self-directed learning, teamwork, and determination, students developed their technical skills while also fundraising for equipment and registration fees. We competed in three major competitions, including FIRST Tech Challenge and Botball, and earned awards at both of them. We’re building on that experience and preparing for future exciting seasons of competition.</p>
         <div class = "clubs">
             <img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF95OoSnAg6zgnWCFrwsBhhdHBsTSOAaVbWTYvZrBCu4bT92mNwoQeIZ8&s=10>
@@ -94,7 +109,7 @@
         </div>
     </div>
     <div class = "cur">
-        <h3 class = "sub">Cybersecurity</h3>
+        <h3 class = "sub" id = "cyber">Cybersecurity</h3>
         <p class = "paragraph">Our cybersecurity club competes in different style competitions: some to secure systems and some to exploit vulnerabilities. In the CyberPatriots competition, students compete in a series of online competition rounds where teams are given a set of virtual operating systems and are tasked with finding and fixing cybersecurity vulnerabilities while maintaining critical services. Recently, the team has won the state for the past 2 years. We had 2 teams ranked in the top 50 in the world. We also compete in many Capture-the-Flag (CTF) competitions and have won several including RUSecure and MetaCTF.</p>
         <div class = "clubs">
             <img src = https://www.uscyberpatriot.org/app/themes/cp25/images/cp-logo-white.png>
@@ -103,7 +118,7 @@
         </div>
     </div>
     <div class = "cur">
-        <h3 class = "sub">Computer Science League</h3>
+        <h3 class = "sub" id = "ACSL">Computer Science League</h3>
         <p class = "paragraph">In our Computer Science League, students participate in various programming competitions, including competitions at Monmouth University, Lockheed Martin, and at Rowan University. Students also explore discrete math topics such as boolean algebra, bit string flicking and computer number systems. </p>
         <div class = "clubs">
             <img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIlDYUyLCZKGsTxD9iEfC6dRPsQq4IZIU6h4VSzxlPA&s>
@@ -112,11 +127,11 @@
         </div>
     </div>
     <div class = "cur">
-        <h3 class = "sub">Computing Inspiration & Mentorship Association </h3>
+        <h3 class = "sub" id = "CIMA">Computing Inspiration & Mentorship Association </h3>
         <p class = "paragraph">A brand-new club focusing on pairing mentors and mentees to help foster inspiration and help struggling underclassmen. </p>
     </div>
  </div>
-<h2 class = "section">Some of the colleges students have gone to</h2>
+<h2 class = "section" id = "colleges">Some of the colleges students have gone to</h2>
 <div class = "karl">
     <div class="college">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgJ6z1dG-os5xg5tdE24hnUtkXkYz-Q4YDAUGVxtroqPXawuQfTxfed90&s=10">
@@ -216,6 +231,9 @@
     </div>
 
 </div>
+</div>
+<div id = "hamburger"  onclick = "side()">
+    ≣
 </div>
 </body>
 </html>
